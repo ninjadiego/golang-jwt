@@ -1,12 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/ninjadiego/golang-jwt/server"
 )
 
 func main() {
-	fmt.Println("Hello, 世界")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	s := server.New()
+	log.Fatal(http.ListenAndServe(":8080", s.Router()))
 }

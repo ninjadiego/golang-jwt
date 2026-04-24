@@ -1,0 +1,29 @@
+# Binarios compilados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+bin/
+
+# Archivos de test
+*.test
+*.out
+coverage.out
+
+# Dependencias vendor
+/vendor/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+
+# Archivos de entorno (contienen secretos como JWT_SECRET)
+.env
+.env.local
